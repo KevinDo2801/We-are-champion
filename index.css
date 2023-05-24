@@ -1,0 +1,110 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    background-color: black;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+img{
+    width: 150px;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 25px;
+    line-height: 25px;
+    color: white;
+    margin: 40px auto 19px;
+}
+
+.input-element{
+    color: #8f8f8f;
+    background-color: #444059;
+    border: none;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+#comment{
+    height: 118px;
+    resize: none;
+}
+
+.from_to{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 9px;
+}
+
+#from, #to{
+    margin: 9px 0;
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#publish-btn{
+    background-color: #28A9F1;
+    border-radius: 8px;
+    border: none;
+    height: 50px;
+    color: #04131c;
+    font-weight: bold;
+    font-size: 22px;
+    transition: all .5s;
+}
+
+#publish-btn:hover{
+    background-color: aqua;
+}
+
+#end{
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li{
+    margin: 13px 0;
+    padding: 5px 14px;
+    background-color: white;
+    position: relative;
+}
+
+.fromTo-li{
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.real-cmt{
+    margin: 10px 0;
+}
+
+.heart{
+    position: absolute;
+    right: 12px;
+    bottom: 10px;
+    font-weight: bold;
+}
+
+.heart i{
+    cursor: pointer;
+}
