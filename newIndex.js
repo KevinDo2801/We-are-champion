@@ -15,6 +15,18 @@ const toEl = document.getElementById("to");
 const publishBtnEl = document.getElementById("publish-btn");
 const commentListEl = document.getElementById("comment-list");
 
+commentEl.addEventListener("input", () => {
+    commentEl.style.border = "transparent";
+});
+
+fromEl.addEventListener("input", () => {
+    fromEl.style.border = "transparent";
+});
+
+toEl.addEventListener("input", () => {
+    toEl.style.border = "transparent";
+});
+
 // Input then publish
 publishBtnEl.addEventListener("click", () => {
     const commentValue = commentEl.value;
@@ -33,6 +45,7 @@ publishBtnEl.addEventListener("click", () => {
         }
         return;
     }
+
 
     const data = {
         comment: commentValue,
@@ -98,7 +111,7 @@ function appendItemToCommentListEl(item) {
     });
 
     const trashCan = newEl.querySelector(`#trash-${itemID}`);
-    trashCan.addEventListener("dblclick", function(){
+    trashCan.addEventListener("dblclick", function () {
         let exactLocationOfItemInDB = ref(database, `commentList/${itemID}`)
 
         remove(exactLocationOfItemInDB);
