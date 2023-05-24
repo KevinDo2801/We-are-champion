@@ -111,7 +111,7 @@ function appendItemToCommentListEl(item) {
     });
 
     const trashCan = newEl.querySelector(`#trash-${itemID}`);
-    trashCan.addEventListener("dblclick", function () {
+    trashCan.addEventListener("click", function () {
         let exactLocationOfItemInDB = ref(database, `commentList/${itemID}`)
 
         remove(exactLocationOfItemInDB);
